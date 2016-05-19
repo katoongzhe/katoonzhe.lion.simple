@@ -6,6 +6,7 @@
 <meta http-equiv="cache-control" content="no-cache" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>test1</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="H5FullscreenPage.css">
 <link rel="stylesheet" type="text/css" href="page-animation.css">
 <style type="text/css">
@@ -48,24 +49,26 @@
     .item1 .part1 {
         position: absolute;
         top: 100px;
-        left: 19%;
+        left: 10%;
+        right: 10%;
         text-align: center;
-        width: 100px;
+        /*width: 100px;
         height: 100px;
-        background-color: rgb(116, 178, 9);
+        background-color: rgb(116, 178, 9);*/
     }
     .item1 .part2 {
         position: absolute;
-        bottom: 100px;
-        right: 19%;
+        width: 226px;
+        height: 302px;
+        top: 44%;
+        left: 26%;
         text-align: center;
-        width: 100px;
+        /*width: 100px;
         height: 100px;
-        background-color: rgb(116, 178, 9);
+        background-color: rgb(116, 178, 9);*/
     }
     .item3 .part1 {
         position: absolute;
-        top: 100px;
         left: 19%;
         text-align: center;
         width: 100px;
@@ -74,39 +77,56 @@
     }
     .item3 .part2 {
         position: absolute;
-        bottom: 100px;
         right: 19%;
         text-align: center;
         width: 100px;
         height: 100px;
         background-color: rgb(116, 178, 9);
     }
+    .item3 .part3 {
+        position: absolute;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-right: -50px;
+        /*background-color: rgb(116, 178, 9);*/
+    }
+
     .item2 .part1 {
         position: absolute;
-        top: 100px;
+        top: 31%;
         right: 19%;
         text-align: center;
         width: 100px;
         height: 100px;
-        background-color: rgb(116, 178, 9);
     }
     .item2 .part3 {
         position: absolute;
-        bottom: 60px;
-        left: 19%;
+        bottom: 33%;
+        left: 6%;
         text-align: center;
         width: 150px;
         height: 150px;
-        background-color: rgb(116, 178, 9);
+    }
+    .item2 .part4 {
+        position: absolute;
+        bottom: 10%;
+        left: 49%;
+        text-align: center;
+        width: 150px;
+        height: 150px;
     }
     .item2 .part2 {
         position: absolute;
-        top: 100px;
+        top: 3px;
         left: 19%;
+        width: 50%;
         text-align: center;
-        width: 100px;
-        height: 100px;
-        background-color: rgb(116, 178, 9);
+/*        width: 100px;
+        height: 100px;*/
     }
     .item4 .part1 {
         position: absolute;
@@ -118,6 +138,42 @@
         background-color: rgb(116, 178, 9);
     }
     .item4 .part2 {
+        position: absolute;
+        top: 150px;
+        right: 19%;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item4 .part3 {
+        position: absolute;
+        right: 19%;
+        top: 200px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item4 .part4 {
+        position: absolute;
+        right: 19%;
+        top: 250px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item4 .part5 {
+        position: absolute;
+        right: 19%;
+        top: 350px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(116, 178, 9);
+    }
+    .item4 .part6 {
         position: absolute;
         bottom: 100px;
         right: 19%;
@@ -167,31 +223,218 @@
         background-image: url(7634.jpg);
         background-position: center;
     }*/
+    .address {
+      font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+      font: 12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+    }
+    .rotate-1 {
+      transform: rotate(-25deg);
+      width: 70%;
+    }
+    .rotate-2 {
+      transform: rotate(-45deg);
+      width: 70%;
+    }
+    .s-rotate-1 {
+      width: 144%;
+    }
+    .s-rotate-2 {
+      transform: rotate(45deg);
+    }
+    .s-rotate-3 {
+      width: 114%;
+      transform: rotate(-45deg);
+    }
+    .s-rotate-3-1 {
+      transform: rotate(-45deg);
+    }
+    .s-rotate-3-2 {
+      transform: rotate(45deg);
+    }
+    .s-rotate-4 {
+      transform: rotate(45deg);
+    }
+
+    .item3 .part3 .cir0 {
+      transform: rotate(0deg);
+      position: relative;
+      top: -80px;
+      z-index: 10;
+    }
+    .item3 .part3 .cir1 {
+      transform: rotate(45deg);
+      position: relative;
+      left: 80px;
+      top: -68px;
+      z-index: 9;
+    }
+    .item3 .part3 .cir2 {
+      transform: rotate(90deg);
+      position: relative;
+      left: 100px;
+      z-index: 8;
+    }
+    .item3 .part3 .cir3 {
+      transform: rotate(135deg);
+      position: relative;
+      left: 80px;
+      top:74px;
+      z-index: 7;
+    }
+    .item3 .part3 .cir4 {
+      transform: rotate(180deg);
+      position: relative;
+      top:99px;
+      z-index: 6;
+    }
+    .item3 .part3 .cir5 {
+      transform: rotate(-135deg);
+      position: relative;
+      top: 74px;
+      right: 90px;
+      z-index: 5;
+    }
+    .item3 .part3 .cir6 {
+      transform: rotate(-90deg);
+      position: relative;
+      /*top:99px;*/
+      right: 80px;
+      z-index: 4;
+    }
+    .item3 .part3 .cir7 {
+      transform: rotate(-45deg);
+      position: relative;
+      top:-68px;
+      right: 80px;
+      z-index: 3;
+    }
 </style>
 
 </head>
 <body class="H5FullscreenPage">
     <div class="H5FullscreenPage-wrap">
         <div class="item item1">
-            <h2>page1</h2>
-            <div class="part part1 fadeIn" data-delay="1000"></div>
-            <div class="part part2 fadeIn"></div>
+            <h2 class="address">南京</h2>
+            <div class="part part1 fadeIn" data-delay="1000">
+             
+              <a href="#" class="thumbnail rotate-1">
+                  <img src="images/nj1.jpg">
+              </a>
+            </div>
+            <div class="part part2 fadeIn">
+              <a href="#" class="thumbnail rotate-2">
+                  <img src="images/nj2.jpg">
+              </a>
+            </div>
         </div>
         <div class="item item2">
             <h2>page2</h2>
-            <div class="part part1 slideRight" data-delay="1300"></div>
-            <div class="part part2 slideLeft"></div>
-            <div class="part part3 zoomIn"></div>
+            <div class="part part1 slideRight" data-delay="1300">
+              <a href="#" class="thumbnail s-rotate-1">
+                  <img src="images/tj_0116_01.jpg">
+              </a>
+            </div>
+            <div class="part part2 slideLeft">
+              
+              <a href="#" class="thumbnail s-rotate-2">
+                  <img src="images/tj_0116_02.jpg">
+              </a>
+            </div>
+            
+            
+            <div class="part part3 zoomIn">
+              <a href="#" class="thumbnail s-rotate-3">
+                <img src="images/tj_0116_03.jpg">
+              </a>
+            </div>
+            <div class="part part4 zoomIn">
+              <a href="#" class="thumbnail s-rotate-4">
+                <img src="images/tj_0116_04.jpg">
+              </a>
+            </div>
         </div>
         <div class="item item3">
             <h2>page3</h2>
-            <div class="part part1 slideUp"></div>
-            <div class="part part2 slideDown"></div>
+            <div class="part part1 slideUp">
+              <a href="#" class="thumbnail s-rotate-3-1">
+                <img src="images/ve_0214_01.jpg">
+              </a>
+            </div>
+            <div class="part part2 slideDown">
+              <a href="#" class="thumbnail s-rotate-3-2">
+                <img src="images/ve_0214.jpg">
+              </a>
+            </div>
+
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir0">
+                <img src="images/ve_0214_circle_06.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir1">
+                <img src="images/ve_0214_circle_07.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir2">
+                <img src="images/ve_0214_circle_00.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir3">
+                <img src="images/ve_0214_circle_01.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir4">
+                <img src="images/ve_0214_circle_02.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir5">
+                <img src="images/ve_0214_circle_03.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir6">
+                <img src="images/ve_0214_circle_04.jpg">
+              </a>
+            </div>
+            <div class="part part3 slideDown">
+              <a href="#" class="thumbnail cir7">
+                <img src="images/ve_0214_circle_05.jpg">
+              </a>
+            </div>
+            
         </div>
         <div class="item item4">
             <h2>page4</h2>
-            <div class="part part1 heartBeat"></div>
-            <div class="part part2 heartBeat"></div>
+            <div class="part part1 heartBeat">
+              <a href="#" class="thumbnail cir7">
+                <img src="images/cm_01.jpg">
+              </a>
+            </div>
+            <div class="part part2 heartBeat">
+              <a href="#" class="thumbnail cir7">
+                <img src="images/cm_02.jpg">
+              </a>
+            </div>
+            <div class="part part3 heartBeat">
+              <a href="#" class="thumbnail cir7">
+                <img src="images/cm_03.jpg">
+              </a>
+            </div>
+            <div class="part part4 heartBeat">
+              <a href="#" class="thumbnail cir7">
+                <img src="images/cm_04.jpg">
+              </a>
+            </div>
+            <div class="part part5 heartBeat">
+              <a href="#" class="thumbnail cir7">
+                <img src="images/cm_05.jpg">
+              </a>
+            </div>
         </div>
         <div class="item item5">
             <h2>page5</h2>
